@@ -18,8 +18,9 @@ function applyMixins(derivedCtor: any, baseCtors: any[]) {
     });
 }
 
-class Person {
-    // jump:() => void;
+class Person implements Jumpable, Runnable {
+    jump:() => void;
+    run: () => void;
     name: string;
     constructor(name: string) {
         this.name = name;
