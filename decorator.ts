@@ -16,7 +16,7 @@ class Greeter {
     }
 }
 
-const greeter= new Greeter("Worls")
+const greeter = new Greeter("Worls")
 console.log(greeter.greet())
 
 /*
