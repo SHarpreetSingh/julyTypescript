@@ -20,7 +20,7 @@
 
 // ["G", "P", "GP", "GG"] [2, 4, 3]// ["MMM","PGM","GP"] [3,10], ["PGG", "GG", "PGG"], travel = [10, 11]
 
-let garbage = ["G", "P", "GP", "GG"], travel = [2, 4, 3]
+let garbage = ["PGG", "GG", "PGG"], travel = [10, 11]
 
 var garbageCollection = function (garbage, travel) {
     let min = 0
@@ -35,6 +35,8 @@ var garbageCollection = function (garbage, travel) {
         // if (element.length === 1) {
         //     min += 1
         // }
+        // console.log(new Array(2 + 1).fill(0));
+        
         let [m, p, g] = [false, false, false];
         console.log("element", element)
         if (travel[index - 1] && index > 0) {
@@ -44,11 +46,10 @@ var garbageCollection = function (garbage, travel) {
                 m = m || garbage[key].includes('M');
                 p = p || garbage[key].includes('P');
                 g = g || garbage[key].includes('G');
-                console.log("element.indexOf(element[key])", key, element.indexOf(element[key]) == key)
+                // console.log("element.indexOf(element[key])", key, element.indexOf(element[key]) == key)
                 if (element.indexOf(element[key]) == key) {
-                    min += travel[index - 1]* (m + p + g);
+                    min += travel[index - 1];
                     console.log("key", key, element[key], "element[key]", "min", min)
-
                 }
             }
         }
