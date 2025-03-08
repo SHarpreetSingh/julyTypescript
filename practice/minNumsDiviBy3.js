@@ -26,7 +26,7 @@ var minimumOperations = function (nums) {
         }
         
         let element = nums[key];
-        console.log(element);
+        console.log("element",element);
         if (element % 3 !== 0) {
             console.log("here ele", element);
             console.log("count", count)

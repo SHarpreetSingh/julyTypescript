@@ -15,6 +15,4 @@ int main(){
     for(auto i:d){
         cout<<i<<" logg "<<endl;
     }cout<<endl;
-
-
 }

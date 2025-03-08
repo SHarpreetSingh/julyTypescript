@@ -3,7 +3,7 @@
 let count = []
 var removeDuplicates = function (nums) {
     nums.filter((value, index, array) => {
-        // console.log(value, index, "indexOf")
+        console.log(nums.indexOf(value), index, "value", value, "indexOf")
         if (nums.indexOf(value) === index) {
             console.log(value, index)
             count.push(value)

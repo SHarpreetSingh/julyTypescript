@@ -11,6 +11,14 @@
 // Input: n = 2
 // Output: 1
 // Explanation: F(2) = F(1) + F(0) = 1 + 0 = 1.
+//1+0=1,1+
+// 
+// 1+0+0+
+// 0+1+1+2
+// 0+1+1+2+3+5
+
+
+
 
 var fib = function (n) {
     if (n === 0 || n===1) return n;

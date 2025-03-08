@@ -7,7 +7,7 @@ Output: "Goal"
 // The final concatenated result is "Goal".
 
 // let command = "G()(al)"
-let command ="(al)G(al)()()G"  //"G()()()()(al)"
+// let command = "(al)G(al)()()G"  //"G()()()()(al)"
 
 var interpret = function (command) {
     // console.log(command.split(''))
@@ -31,3 +31,22 @@ var interpret = function (command) {
 };
 
 interpret(command)
+
+// let str = "chand"
+// let a = []
+// var getInde = function (str) {
+//     for (let index = 0; index < str.length; index++) {
+//         console.log(str[index]);
+//         for (let i = index + 1; i < str.length; i++) {
+//             if (str[index] == str[i]) {
+//                 console.log(str[index], str[i], str[index] == str[i]);
+//                 a.push([str[index],[index, i]])
+//             }
+//         }
+//     }
+//     console.log("===", a)
+
+//     return a
+// }
+
+// getInde(str)

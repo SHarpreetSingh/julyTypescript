@@ -8,7 +8,7 @@
 
 
 var numberOfBeams = function (bank) {
-    let   pre = 1, arr = [],sum=0
+    let   pre = 1, arr = [],sum = 0
     for (let index = 0; index < bank.length; index++) {
         const floor = bank[index];
         // console.log(floor);
@@ -29,7 +29,7 @@ var numberOfBeams = function (bank) {
         }
     }
     console.log("arr", arr);
-    if(arr.length==1)  return false
+    if(arr.length == 1)  return false
       
     for (let index = 0; index < arr.length; index++) {
         const element = arr[index];

@@ -8,7 +8,7 @@ var compose = function (functions) {
         // functions.reverse().forEach((v,i,array)=>{
         //     console.log("element", i,v ,array[i](x));
         //     x= array[i](x)
-        // })
+        // }) 
         // return x
         for (let index = functions.length - 1; index >= 0; index--) {
             const element = functions[index];
@@ -22,7 +22,7 @@ var compose = function (functions) {
 const fn = compose([x => x + 1, x => 2 * x])
 console.log(fn(4)) // 9
 // console.log(fn(4)) // 9
-
+//
 
 /**
  * @param {Function} fn
