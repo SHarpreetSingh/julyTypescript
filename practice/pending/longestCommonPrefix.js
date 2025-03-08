@@ -8,7 +8,7 @@ var longestCommonPrefix = function (strs) {
     console.log("strs");
     let splStr = strs.join("").split("")
     splStr.filter((value, index, array) => {
-        // console.log(value, index, "indexOf")
+        console.log(value, index, "indexOf")
         if (splStr.indexOf(value) === index) {
         } else {
             // s += value
@@ -23,7 +23,7 @@ var longestCommonPrefix = function (strs) {
                 console.log("push",stack)
             }
         }
-        // console.log("finstr", str,)
+        // console.log("finstr", )
     })
 };
 
